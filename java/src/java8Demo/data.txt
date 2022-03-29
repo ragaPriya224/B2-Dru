@@ -1,0 +1,204 @@
+java 8 feature -> 2014
+latest 17 version 
+
+
+python, R, scala 
+10 lines of code ->
+100 lines of java -> 
+
+Less number of code -> Functional programming
+ Lambda Expresion -> powerful concept to enable  functional,
+ 					 reduce lines of code
+ 					 
+1. lambda expression
+2. functional interface
+3. default/static methods
+4. predefined  functional interfaces
+     predicate
+     consumer
+     supplier
+     function
+5.Double colon operator (::)
+     for method reference purpose
+     for constructor reference. 
+6. streams, parallel streams
+7. optional classes ( to avoid null pointer exce)
+8. date time api ( util.date or sql.date)
+9. Nashron js engine
+
+
+1. lambda expression
+  LISP -> used lambda 
+  lambda -> python, c , c++ 
+   not specific to java, came lately 
+   -> lambda expression
+   objective: to bring benefits of functional programming into javaa
+   ->
+   anonymous function
+ -> no name/ nameless
+ -> without r type, without modifier, without name -> 
+ 
+ very vey easy concepts
+ 
+ public void m1()
+ {
+ sysout("hello");
+}
+  () -> sysout("hello"); 
+{} -> optional
+
+EG: 2
+
+ public void m1(int a, int b){
+ sysout(a+b);
+ }
+   ( a, b) -> sysout(a+b); //solution
+ 
+ 
+ EG 3:
+ public int squareIt(int n){
+ return n*n;
+ }
+
+    (n) ->  n*n;
+ 
+ EG: 4
+ public void m1(String s){
+ return s.length()
+ }
+ 
+    ( s) -> {return s.length() };
+    
+FI -> Functional Interface
+Runnable, comparable, actionListener, callable
+common point-> only one method
+run(), compareTo(), actionPerformed(), call()
+
+SAM?single abstract method   in functional Interface
+if u wanna invoke lambda expressions, then compulsorily
+we need FI
+
+FI? 1 SAM
+Inside FI? 
+
+interface interf{
+public void m1();
+ default void m3(){};
+ public static void m4(){}
+}
+ perfectly valid 
+ 
+ @annotation -> @FunctionalInterface
+ optional 
+ 
+ EG:
+ 
+ @FunctionalInterface
+ interface A {
+ public void m1();
+ }
+ @FunctionalInterface
+ interface B extends A{
+ 
+ }
+ Ans: b valid 
+ 
+ -------------
+ @FunctionalInterface
+ interface A {
+ public void m1();
+ }
+ @FunctionalInterface
+ interface B extends A{
+  public void m1();
+ }
+ Ans: valid bcoz overriding
+ ==========
+  @FunctionalInterface
+ interface A {
+ public void m1();
+ }
+ @FunctionalInterface
+ interface B extends A{
+  public void m2();
+ }
+ Qn: invalid -> multiple abstract methods
+ =============
+  @FunctionalInterface
+ interface A {
+ public void m1();
+ }
+ interface B extends A{
+  public void m2();
+ }
+ Ans: valid 
+ ==============
+ @FunctionalInterface -> 1 SAM , optional annotation
+ ------------------
+ Linking FI with lambda
+ 
+ QN:
+ interface Interf{
+ public void m1();
+ }
+ 
+class Demo implements Interf{
+public void m1(){
+s.out("hello")}
+}
+ class Test{
+ psvm(){
+ Demo d = new Demo();
+ d.m1();
+ }
+ }
+ =========
+ Interf i = new Demo();
+ i.m1();
+ 
+ Interf i = () -> s.out("hello");
+ i.m1();
+ ---------------
+ 
+ QN:
+ interface Interf{
+ public void add(int a, int b);
+ }
+ 
+
+ class Test{
+ psvm(){
+ Interf i  = (a,b) -> s.out(a+b);
+ i.add(10,20);
+ }
+ }'
+ 
+ Write the points whatever there on the screen in your note page with pen
+  Write the points 
+  functional interface always associated with lambda expression
+  IF FI concept is not there, then lambda is  also  not there. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
