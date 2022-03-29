@@ -1,0 +1,29 @@
+1. java 7 
+int total = 0;
+for(int i = 0; i<=50;i++){
+total +=i;
+}
+s.out(total)
+
+
+
+//with java 8
+int total1 = IntStream.rangeClosed(0,50).sum();
+s.out(total1)
+
+
+
+2. JAVA 7 -> Remove duplicate
+
+List<String> names = Arrays.asList("Sam", "Peter","ballon","Sam");
+List<String> uniqueList = new ArrayList<String>();
+for(String name: names){
+if(!uniqueList.contains(name))
+uniqueList.add(name);
+}
+s.out(uniqueList)
+
+//JAVA 8 
+List<String> uniqueList1 = names.stream().distinct().collect(Collectors.toList());
+  
+

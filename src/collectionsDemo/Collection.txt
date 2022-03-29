@@ -1,0 +1,127 @@
+ Collection -> group of individual object in a single entity. 
+ 9 key interface- >
+ 1. collection 
+ 2. list
+ 3. set 
+ 4. sorted set
+ 5. navigable set
+ 6. queue
+ 7. map
+ 8. sorted map
+ 9. navigable map 
+ 
+
+Collection(I)
+|
+List(I)
+|
+LinkedList(Class)     ArrayList      vector-> Stack
+
+Collection(I)
+ -> root interface
+ -> defines most common method for any collection object. 
+ -> no concrete class that implements this.
+ 
+ 2. list interface
+ -> duplicate will be allowed  
+ -> order of insertion  maintain-> java, c, python 
+ 
+ arraylist, linkedlist, vector(1.0)
+Collection
+|
+List
+|
+ArrayList
+ 3. set 
+ -> child of collection 
+ -> duplicate -> X
+ -> insertion order -> X
+ 
+ Set(I)
+ |
+ Hashset
+ |
+ LinkedHashSet
+4. sorted set 
+-> duplicate -> X
+-> insertion according to some sorting order 
+
+Collection -> Set  -> Sorted SEt
+ 
+ 5. navigable set 
+ Collection -> Set  -> Sorted SEt-> navigable set  -> Treeset 
+ 
+-> navigation purposes 
+6. queue 
+fifo
+ represent group of individual objects prior to processing , we'll go for queue
+ Queue -> Priority Queue
+       -> Blocking Queue  -> linked bq, priority bq
+       
+       all above, representing group of individual obbjects
+key , value pair 
+a -> 21
+b -> 35
+
+7. map(I)
+-> duplicate key is not allowed 
+-> not child interface of collection 
+
+map -> hashtable -> properties    -> legacy class
+	  hashmap -> LinkedHashMap
+ 	  weakhashmap,
+  	  identity hashmap 
+
+8. sorted map(I)
+represent -> keyvalue pair according to some sorting order
+
+map -> sortedmap -> navigable map -> treemap 
+
+9. navigable map (I)
+1. child of sorted map
+2. several utility methods for navigation purpose
+_______________________________________________________
+
+
+employeeID name
+12     priya 
+34     suresh 
+41     dru
+56     suresh 
+--------------------------------
+sorting
+1. comparable(I)-> natural order
+2. comparator(I) -> customized order
+_______________________________________
+Cursors -> To get object one by one 
+1. Iterator(I)
+2. Enumeration(I)  -> Legacy class 
+3. ListIterator(I)
+4. splitIterator
+----------------------------
+Utility classes 
+1. Collections
+2. Arrays
+___________________
+
+
+Collection Interface 
+
+add(Object o)
+addAll(Collection c)
+remove(Object o)
+removeAll(Collection c)   
+clear()
+retainAll(Collection c)
+
+size()
+contains(Object o )
+containsAll(Collection c ) 
+
+ .toArray();
+
+List Interface 
+
+
+
+

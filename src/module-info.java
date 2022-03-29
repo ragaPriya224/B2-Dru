@@ -1,0 +1,2 @@
+module dru2 {
+}
