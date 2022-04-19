@@ -1,9 +1,12 @@
-package dru.health.care;
+package dru.health.care.entity;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.annotation.Id;
 
 
 public class Topic {
+	
+	@Id
 	private String id;
 	private String name;
 	private String description;
