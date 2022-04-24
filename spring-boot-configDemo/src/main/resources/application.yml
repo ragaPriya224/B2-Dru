@@ -1,0 +1,21 @@
+server.port : 4000
+my.greeting: helo colleagues
+app.name: dummy value 
+db.username: user404
+# list:
+#  values : hello, hi, goodmorning
+##app.name : 
+##app.
+app:
+ name: sage it
+ description : welcome to ${app.name} 
+#
+#db.details : "{ connectionString: 'https://..... ', username: 'user203', pwd:'password is empty'}"
+#
+#
+user.name : user202
+user.password : '@#$%^'
+user.role :  manager
+#
+#management.endpoints.web.exposure.include: '*'
+
